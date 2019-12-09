@@ -20,13 +20,13 @@ class Cat extends Pet {
 
 function example() {
     let instance = arguments[0]
-    if (instance instanceof Dog || instance instanceof DogES5) {
+    if (instance instanceof Dog) {
         instance.bark()
     }
-    if (instance instanceof Cat || instance instanceof CatES5) {
+    if (instance instanceof Cat) {
         instance.purr()
     }
-}
+} 
 
 example(new Dog())
 example(new Cat())

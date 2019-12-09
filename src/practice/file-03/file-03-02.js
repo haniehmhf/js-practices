@@ -1,5 +1,7 @@
 // Study Shorthand methods in es6, give examples.
 
+// Ben shorthand method u aşağıda yazdığım gibi biliyordum, Araştırdım okudum ama yeni bir sey bulamadım
+
 function person(name, age) {
 
     return {

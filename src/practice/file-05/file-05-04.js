@@ -1,6 +1,5 @@
 // Use Promise.all function for building a chain of promises.
 
-// use Promise.all([]) wait all promise resolved or rejected
 let checkArg = function (str) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {

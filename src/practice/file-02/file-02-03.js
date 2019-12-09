@@ -37,17 +37,14 @@ console.log(sp) //=> ["h", "e", "l", "l", "o"]
 //rest
 
 function sumES5() {
-
   const arr1 = Array.prototype.slice.call(arguments)
   return arr1.reduce((a, b) => a + b)
-
 }
 
 console.log(sumES5(1, 2, 3))
 
 
 //spread
-
 let arrES5 = [1, 2, 3]
 let maxES5 = Math.max.apply(Math, arrES5)
 console.log(maxES5)

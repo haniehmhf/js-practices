@@ -41,7 +41,7 @@ console.log(result);
 // hoist error on anonymous
 
 let a = add(1, 2) // works => hoist
-// let b = plus(1,2) //error => not defined => not hoist
+// let b = plus(1,2) // error => not defined => not hoist
 
 function add(a, b) {
     return a + b

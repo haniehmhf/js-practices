@@ -66,6 +66,7 @@ function StudentES5(name,age,gender,marks){
 }
 
 StudentES5.prototype = Object.create(PersonES5.prototype)
+StudentES5.prototype.constructor = StudentES5
 
 StudentES5.prototype.getMarksES5 = function(){
   return this.marks

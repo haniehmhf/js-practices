@@ -3,20 +3,26 @@
 
 // answer:
 
-function MyClass() {
+var lib = (function () {
 
-    let varOne = "Test One";
-    let varTwo = "Test Two";
+    var _libName = "MyLib";
 
-    this.getVarOne = function () {
-        return varOne;
-    };
-
-    this.getVarTwo = function () {
-        return varTwo;
+    function printName() {
+        console.log(_libName)
     }
-}
 
-var myObject = new MyClass();
-console.log(myObject.getVarTwo());
+    return {
+        get name() {
+            return _libName;
+        },
+        set name(newName) {
+            _libName = newName;
+        },
+        printName: printName,
+    }
+})();
 
+lib.printName();
+lib.name = "MyNewLib";
+
+console.log(lib.name);

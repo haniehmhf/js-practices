@@ -1,4 +1,5 @@
 // use Promise.race([]) wait any promise resolved or rejected
+
 let checkArg = function (str) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {

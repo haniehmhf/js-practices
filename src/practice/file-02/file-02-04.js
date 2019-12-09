@@ -16,8 +16,6 @@ let arr2 = arr.map(function (i) {
 console.log(arr2) //=> ["hello hani" , "hallo can"]
 
 
-//------------------------------------
-
 //reduce
 
 let reduceV = [2, 3, 4]

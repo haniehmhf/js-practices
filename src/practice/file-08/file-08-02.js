@@ -22,7 +22,7 @@ var o = create(Thing);
 /*
 What does “create” function do ? Is there a nickname for it ? it does what *new* do
 o.constructor.name => Thing
-o.constructor() = It refers to Thing function itself
+o.constructor() => 3
 Object.getPrototypeOf(o) === Thing  => false => Object.getPrototypeOf(o) === Thing.prototype 
 o.Thing() => meanless! (undefined)
 o instanceof Thing   => true

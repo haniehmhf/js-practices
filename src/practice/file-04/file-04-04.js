@@ -11,8 +11,8 @@
 // method return an object of properties that contain these details.
 
 const myObj = {
-   name: "Can",
-   age: 30
+  name: "Can",
+  age: 30
 };
 
 // for example, the descriptor of myObj should something like this:
@@ -36,9 +36,9 @@ const myObj = {
 
 // we can define or alter the descriptor.
 Object.defineProperty(myObj, "iterationProp", {
-   value: "This is an read-only, iteration-able property for myObj",
-   enumerable: true,
-   writable: false,
+  value: "This is an read-only, iteration-able property for myObj",
+  enumerable: true,
+  writable: false,
 });
 
 // ...
@@ -66,3 +66,14 @@ Object.defineProperty(myObj, "iterationProp", {
 }
 */
 // All the attributes except *value* will have *true* as it's default value.
+
+const targetObj = {};
+
+const metaData = Object.getOwnPropertyDescriptors(myObj)
+
+for (let prop in metaData) {
+  Object.defineProperty(targetObj, prop, metaData[prop])
+}
+
+console.log(metaData)
+console.log(Object.getOwnPropertyDescriptors(targetObj))
